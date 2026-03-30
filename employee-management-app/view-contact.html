@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>employee contacts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="sidebar">
+         <div class="profile-area">
+            <img src="images/profile.png">
+                 <p><b>RYAN BUTURU</b></p>
+          
+    </div>
+     <ul class="nav-links">
+            <li><a href="index.html"> Home</a></li>
+              <li><a href="new-contact.html">New Contact</a></li>
+             <li><a href="view-contact.html">View All Contacts</a></li>
+         </ul>
+ </div>
+ <div class="main-content">
+    <h2>Employee List</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>NAME</th>
+            <th>EMAIL</th>
+            <th>PHONE</th>
+            <th>DEPARTMENT</th>
+            <th>ACTIONS</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>Ali Husssein</td>
+            <td>alihuss@gmail.com</td>
+            <td>0732884256</td>
+            <td>Technician</td>
+            <td>
+                        <button class="btn btn-details">Details</button>
+                        <button class="btn btn-edit" onclick="showEditAlert()">Edit</button>
+                        <button class="btn btn-delete" onclick="confirmDelete()">Delete</button>
+                    </td>
+            
+
+        </tr>
+         <tr>
+            <td>Tom Njeri</td>
+            <td>tomnje@gmail.com</td>
+            <td>0716873578</td>
+            <td>Receptionist</td>
+             <td>
+                        <button class="btn btn-details">Details</button>
+                        <button class="btn btn-edit" onclick="showEditAlert()">Edit</button>
+                        <button class="btn btn-delete" onclick="confirmDelete()">Delete</button>
+                    </td>
+            
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+}
+
+
+.sidebar {
+    width: 250px;
+    background-color: #000;
+    color: white;
+    padding: 20px 0;
+}
+
+.profile-area {
+    padding: 0 20px 20px;
+    border-bottom: 1px solid #000;
+    text-align: center;
+}
+
+.profile-area img {
+    width: 60px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.status-online {
+    color: #28a745;
+    font-size: 12px;
+}
+
+.nav-links {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-links li a {
+    display: block;
+    padding: 15px 20px;
+    color: #ccc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.nav-links li a:hover, .nav-links li a.active {
+    background-color: #3e444a;
+    color: white;
+}
+
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.dash-header {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    flex: 1;
+    padding: 20px;
+    color: white;
+    border-radius: 4px;
+    position: relative;
+}
+
+.card h2 { font-size: 40px; }
+.card p { margin-bottom: 20px; }
+.card .more-info {
+    background: rgba(0,0,0,0.1);
+    display: block;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+}
+
+.blue-card { background-color: #17a2b8; }
+.green-card { background-color: #28a745; }
+
+
+.form-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+    max-width: 800px;
+    border-bottom: 5px solid #d9534f; 
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.form-group label {
+    width: 150px;
+    font-weight: bold;
+}
+
+.form-group input, .form-group select {
+    flex: 1;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+
+table {
+    width: 100%;
+    background: white;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn-details { background-color: #17a2b8; } /* Light Blue */
+.btn-edit { background-color: #ffc107; color: #000; } /* Yellow/Orange */
+.btn-delete { background-color: #dc3545; } /* Red */
